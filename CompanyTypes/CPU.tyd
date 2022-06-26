@@ -1,0 +1,17 @@
+CompanyType
+{
+    Specialization "Manufacturing"
+    PerYear 0.5
+    NameGen "CPUCNG"
+    Min 2
+    Max 5
+    Frameworks True
+    Types [
+        {
+        NameGen "CPUPNG"
+        Software "CPU"
+        Chance 1
+        Force True
+        }
+    ]
+}

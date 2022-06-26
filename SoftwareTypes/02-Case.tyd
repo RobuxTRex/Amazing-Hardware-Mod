@@ -1,0 +1,125 @@
+SoftwareType
+	{
+	Name			"Case"
+	Description		"The shell of the PC, protecting all of its components."
+	Random			0.2
+	Popularity		0.8
+	Retention		40
+	IdealPrice	    29.99
+	OptimalDevTime	10
+	SubmarketNames	[ "Aesthetics"; "Security"; "Durability" ]
+	Iterative		1
+	NameGenerator	CASEPNG
+	OSSupport		[ Computer; Phone ]
+	InHouse			True
+	Features
+		[
+			{
+			Name		Security
+			Spec		System
+			Description "Configure the case's architecture"
+			DevTime		2
+			CodeArt		0
+			Submarkets	[ 0; 2; 0 ]
+			Features
+				[
+					{
+					Name		"Wooden Case"
+					Description "For users who dont care about the security of their super-cool build."
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 0 ]
+					}
+					{
+					Name		"Metal Case"
+					Description "Secure, but just don't dent it :)"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 3; 0 ]
+                    Unlock      1990
+					}
+					{
+					Name		"Steel Case"
+					Description "Very secure, should withstand high temperatures and day-to-day standards"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 5; 0 ]
+					}
+					{
+					Name		"Aluminiun Case"
+					Description "Will be the new standards within 2020!"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 10; 0 ]
+                    Unlock      2015
+					}
+					{
+                    Name		"USB"
+                    DevTime		3
+                    Level		1
+                    CodeArt		1
+                    Submarkets	[ 0; 0; 0 ]
+                    }
+                    {
+                    Name		"USB 2.0"
+                    DevTime		3
+                    Level		1
+                    CodeArt		1
+                    Submarkets	[ 0; 0; 0 ]
+                    }
+                    {
+                    Name		"USB 2.1"
+                    DevTime		3
+                    Level		1
+                    CodeArt		1
+                    Submarkets	[ 0; 0; 0 ]
+                    }
+                    {
+                    Name		"USB 3"
+                    DevTime		3
+                    Level		1
+                    CodeArt		1
+                    Submarkets	[ 0; 0; 0 ]
+                    }
+                    {
+                    Name		"USB 3.1"
+                    DevTime		3
+                    Level		1
+                    CodeArt		1
+                    Submarkets	[ 0; 0; 0 ]
+                    }
+				]
+			}
+			{
+			Name			Aesthetics
+			Spec			3D
+			Optional		True
+			Description 	"Make your super-expensive build look cool!"
+			DevTime			3
+			CodeArt			0.5
+			Dependencies	"2D Editor"
+			Submarkets		[ 0; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Glass Panel"
+					DevTime		1
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 0; 1; 2 ]
+					}
+					{
+					Name		"RGB"
+					DevTime		2
+					Level		3
+					CodeArt		0.5
+					Submarkets	[ 0; 1; 2 ]
+					}
+				]
+			}
+		]
+	}

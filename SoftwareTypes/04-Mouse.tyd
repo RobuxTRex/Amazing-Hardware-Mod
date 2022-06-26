@@ -1,0 +1,146 @@
+SoftwareType
+	{
+	Name			"Mouse"
+    Description		"Play a game of "
+	Random			0.5
+	Popularity		0.9
+	Retention		24
+	IdealPrice	    69.99
+	OptimalDevTime	7
+	SubmarketNames	[ "Aesthetics"; "Speed"; "Durability" ]
+	Iterative	    0.4
+	NameGenerator	FANPNG
+	InHouse			True
+	Features
+		[
+			{
+			Name		Build
+			Spec		System
+			Description "The main properties of the fan"
+			DevTime		2
+			CodeArt		0
+			Submarkets	[ 0; 1; 2 ]
+			Features
+				[
+					{
+					Name		"100RPM"
+					Description "Super slow, but silent fans!"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"250RPM"
+					Description "Speed!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+                    Unlock      1980
+					}
+					{
+					Name		"500RPM"
+					Description "Quite fast, if I'm going to be honest."
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+                    Unlock      1985
+					}
+					{
+					Name		"1000RPM"
+					Description "Speed - but not as fast as today!"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 2; 1 ]
+                    Unlock      1995
+					}
+					{
+                    Name		"2000RPM"
+                    Description "It's so fast!"
+                    DevTime		3
+                    Level		1
+                    CodeArt		1
+                    Submarkets	[ 0; 2; 1 ]
+                    Unlock      2003
+                    }
+                    {
+                    Name		"2500RPM"
+                    Description "It's not much faster..."
+                    DevTime		3
+                    Level		1
+                    CodeArt		1
+                    Submarkets	[ 0; 3; 1 ]
+                    Unlock      2005
+                    }
+                    {
+                    Name		"3000RPM"
+                    Description "If this is an average, that's too fast!"
+                    DevTime		3
+                    Level		2
+                    CodeArt		1
+                    Submarkets	[ 0; 3; 1 ]
+                    Unlock      2011
+                    }
+                    {
+                    Name		"3500RPM"
+                    Description "It's like today!"
+                    DevTime		3
+                    Level		2
+                    CodeArt		1
+                    Submarkets	[ 0; 4; 1 ]
+                    Unlock      2016
+                    }
+                    {
+                    Name		"4000RPM"
+                    Description "Very fast!"
+                    DevTime		3
+                    Level		3
+                    CodeArt		1
+                    Submarkets	[ 0; 5; 1 ]
+                    Unlock      2020
+                    }
+                    {
+                    Name		"Premium Material"
+                    Description "You won't be replacing these any time soon!"
+                    DevTime		3
+                    Level		3
+                    CodeArt		1
+                    Submarkets	[ 2; 2; 5 ]
+                    Unlock      2020
+                    }
+				]
+			}
+			{
+			Name			Aesthetics
+			Spec			3D
+			Optional		True
+			Description 	"Make your super-expensive fan look cool!"
+			DevTime			3
+			CodeArt			0.5
+			Dependencies	"2D Editor"
+			Submarkets		[ 3; 0; 0 ]
+			Features
+				[
+					{
+					Name		"Neon Material"
+                    Description "It'll burn your eyes!"
+					DevTime		1
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 4; 0; 2 ]
+					}
+					{
+					Name		"RGB"
+                    Description "Ooh; shiny!"
+					DevTime		2
+					Level		3
+					CodeArt		0.5
+					Submarkets	[ 4; 0; 0 ]
+					}
+				]
+			}
+		]
+	}

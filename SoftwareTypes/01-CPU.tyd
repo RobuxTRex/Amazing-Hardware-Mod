@@ -1,0 +1,693 @@
+SoftwareType
+	{
+	Name			"CPU"
+	Description		"The CPU is the heart of your Computer."
+	Random			0.2
+	Popularity		1
+	Retention		24
+	IdealPrice		150.00
+	OptimalDevTime	75
+	SubmarketNames	[ "Speed"; "Configuration Variety"; "Reliability" ]
+	Iterative		0.8
+	NameGenerator	CPUPNG
+	InHouse			True
+	Hardware        True
+	Manufacturing
+	{
+		Components
+		[
+			{
+			Name "Core"
+ 			BuiltInThumbnail Display
+			Price 2
+			Time 4
+			DependsOn "Single-Core"
+			}
+			{
+			Name "Die"
+			BuiltInThumbnail Display
+		    Price 3
+		    Time 6
+		    }
+		    {
+		    Name "Shell"
+		    BuiltInThumbnail Plastic
+		    Price 2
+		    Time 4
+		    }
+			{
+		    Name "CPU"
+		    BuiltInThumbnail PCB
+		    Price 3
+		    Time 8
+		    }
+			{
+			Name "Thermostat"
+			BuiltInThumbnail PCB
+			Price 3
+			Time 8
+			}
+			{
+			Name "Cooling"
+			BuiltInThumbnail Vibration
+			Price 3
+			Time 8
+			}
+			{
+			Name "Thermal-Paste"
+			BuiltInThumbnail Microchip
+			Price 3
+			Time 8
+			}
+			{
+			Name "Safety"
+			BuiltInThumbnail Harddrive
+			Price 3
+			Time 8
+			}
+		]
+		Processes
+		[
+			{
+			Inputs [ "Core"; "Die"; "Shell" ]
+			Output CPU
+			}
+			{
+			Inputs [ "Thermostat"; "Cooling"; "Thermal-Paste" ]
+			Output Safety
+			}
+			{
+			Inputs [ "CPU"; "Safety" ]
+			Output Final
+			}
+		]
+		FinalTime 2
+	}
+	Features
+		[
+			{
+			Name		Speculations
+			Spec		System
+			Description "Protect against local threats"
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 2; 3; 2 ]
+			Features
+				[
+					{
+					Name		"Single-Core"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Single-Threaded"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"100KHz"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"250KHz"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+                    Unlock      1972
+					}
+					{
+					Name		"500KHz"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+                    Unlock      1975
+					}
+					{
+					Name		"1MHz"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+                    Unlock      1980
+					}
+                    {
+					Name		"2MHz"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+                    Unlock      1983
+					}
+                    {
+					Name		"5MHz"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+                    Unlock      1986
+					}
+                    {
+					Name		"20MHz"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+                    Unlock      1989
+					}
+                    {
+					Name		"50MHz"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+                    Unlock      1991
+					}
+                    {
+					Name		"100MHz"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+                    Unlock      1994
+					}
+					{
+					Name		"Dual-Threaded"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 3; 0 ]
+                    Unlock      1996
+					}
+                    {
+					Name		"250MHz"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+                    Unlock      1999
+					}
+					{
+					Name		"Dual-Core"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 3; 0 ]
+                    Unlock      2000
+					}
+					{
+					Name		"Quad-Threaded"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+					Unlock      2000
+					}
+                    {
+					Name		"500MHz"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 3; 0 ]
+                    Unlock      2003
+					}
+					{
+					Name		"750MHz"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 3; 0 ]
+                    Unlock      2006
+					}
+					{
+					Name		"Triple-Core"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 3; 0 ]
+                    Unlock      2009
+					}
+					{
+					Name		"Six-Threaded"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 3; 0 ]
+					Unlock      2009
+					}
+                    {
+					Name		"1GHz"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 3; 0 ]
+                    Unlock      2010
+					}
+					{
+					Name		"Quad-Core"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+                    Unlock      2011
+					}
+					{
+					Name		"Eight-Threaded"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+					Unlock      2011
+					}
+                    {
+					Name		"1.5GHz"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+                    Unlock      2013
+					}
+					{
+					Name		"Eight-Core"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+                    Unlock      2014
+					}
+					{
+					Name		"Sixteen-Threaded"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+					Unlock      2014
+					}
+                    {
+					Name		"2.5GHz"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+                    Unlock      2016
+					}
+					{
+					Name		"Sixteen-Core"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+                    Unlock      2017
+					}
+					{
+					Name		"Thirty-Two-Threaded"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 5; 0 ]
+					Unlock      2017
+					}
+                    {
+					Name		"3GHz"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 5; 0 ]
+                    Unlock      2017
+					}
+                    {
+					Name		"4GHz"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 5; 0 ]
+                    Unlock      2019
+					}
+					{
+					Name		"Thirty-Two-Core"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 5; 0 ]
+					Unlock      2020
+					}
+					{
+					Name		"Sixty-Four-Threaded"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 5; 0 ]
+					Unlock      2020
+
+				 	}
+                    {
+					Name		"5GHz"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 5; 0 ]
+                    Unlock      2022
+					}
+					{
+					Name		"Sixty-Four-Core"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 5; 0 ]
+					Unlock      2022
+					}
+					{
+					Name		"128-Threaded"
+					DevTime		2
+					Level		3
+					CodeArt		1
+					Submarkets	[ 1; 5; 0 ]
+					Unlock      2022
+					}
+				]
+			}
+			{
+			Name			Process
+			Spec			3D
+			Description 	"Size of transistors on the die."
+			Dependencies    "3D Editor"
+			DevTime			3
+			CodeArt			0.5
+			Dependencies	"2D Editor"
+			Submarkets		[ 0; 0; 1 ]
+			Features
+				[
+					{
+					Name		"10μm"
+                    Description "Transistors are sized 10μm (10,000nm)"
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+                    Unlock      1970
+					}
+					{
+					Name		"7.5μm"
+                    Description "Transistors are sized 7.5μm (7,500nm)"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+                    Unlock      1973
+					}
+					{
+					Name		"6μm"
+                    Description "Transistors are sized 6μm (6,000nm)"
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+                    Unlock      1974
+					}
+					{
+					Name		"5μm"
+					Description "Transistors are sized 5μm (5,000nm)"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+                    Unlock      1975
+					}
+                    {
+                    Name		"3μm"
+                    Description "Transistors are sized 3μm (3,000nm)"
+                    DevTime		2
+                    Level		1
+                    CodeArt		1
+                    Submarkets	[ 1; 0; 1 ]
+                    Unlock      1977
+                    }
+                    {
+                    Name		"2μm"
+                    Description "Transistors are sized 2μm (2,000nm)"
+                    DevTime	    2
+                    Level		1
+                    CodeArt	    1
+                    Submarkets	[ 1; 0; 1 ]
+                    Unlock      1981
+                    }
+                    {
+                    Name		"1.5μm"
+                    Description "Transistors are sized 1.5μm (1,500nm)"
+                    DevTime	    2
+                    Level		1
+                    CodeArt	    1
+                    Submarkets	[ 1; 0; 1 ]
+                    Unlock      1982
+                    }
+                    {
+                    Name		"0.8μm"
+                    Description "Transistors are sized 0.8μm (800nm)"
+                    DevTime	    2
+                    Level		2
+                    CodeArt	    1
+                    Submarkets	[ 1; 0; 1 ]
+                    Unlock      1986
+                    }
+                    {
+                    Name		"750nm"
+                    Description "Transistors are sized 750nm (0.75μm)"
+                    DevTime	    2
+                    Level		2
+                    CodeArt	    1
+                    Submarkets	[ 1; 0; 1 ]
+                    Unlock      1991
+                    }
+                    {
+                    Name		"500nm"
+                    Description "Transistors are sized 500nm (0.5μm)"
+                    DevTime	    2
+                    Level		2
+                    CodeArt	    1
+                    Submarkets	[ 2; 0; 2 ]
+                    Unlock      1993
+                    }
+                    {
+                    Name		"400nm"
+                    Description "Transistors are sized 400nm (0.4μm)"
+                    DevTime	    2
+                    Level		2
+                    CodeArt	    1
+                    Submarkets	[ 2; 0; 2 ]
+                    Unlock      1995
+                    }
+                    {
+                    Name		"290nm"
+                    Description "Transistors are sized 290nm (0.29μm)"
+                    DevTime	    2
+                    Level		2
+                    CodeArt	    1
+                    Submarkets	[ 2; 0; 2 ]
+                    Unlock      1996
+                    }
+                    {
+                    Name		"200nm"
+                    Description "Transistors are sized 200nm (0.2μm)"
+                    DevTime	    2
+                    Level		2
+                    CodeArt	    1
+                    Submarkets	[ 2; 0; 2 ]
+                    Unlock      1997
+                    }
+                    {
+                    Name		"180nm"
+                    Description "Transistors are sized 180nm (0.18μm)"
+                    DevTime	    2
+                    Level		2
+                    CodeArt	    1
+                    Submarkets	[ 2; 0; 2 ]
+                    Unlock      1999
+                    }
+                    {
+                    Name		"130nm"
+                    Description "Transistors are sized 130nm (0.13μm)"
+                    DevTime	    2
+                    Level		2
+                    CodeArt	    1
+                    Submarkets	[ 2; 0; 2 ]
+                    Unlock      2001
+                    }
+                    {
+                    Name		"90nm"
+                    Description "Transistors are sized 90nm (0.09μm)"
+                    DevTime	    2
+                    Level		2
+                    CodeArt	    1
+                    Submarkets	[ 2; 0; 2 ]
+                    Unlock      2003
+                    }
+                    {
+                    Name		"65nm"
+                    Description "Transistors are sized 65nm (0.065μm)"
+                    DevTime	    2
+                    Level		3
+                    CodeArt	    1
+                    Submarkets	[ 2; 0; 2 ]
+                    Unlock      2007
+                    }
+                    {
+                    Name		"45nm"
+                    Description "Transistors are sized 45nm (0.045μm)"
+                    DevTime	    2
+                    Level		3
+                    CodeArt	    1
+                    Submarkets	[ 2; 0; 2 ]
+                    Unlock      2008
+                    }
+                    {
+                    Name		"32nm"
+                    Description "Transistors are sized 32nm (0.032μm)"
+                    DevTime	    2
+                    Level		3
+                    CodeArt	    1
+                    Submarkets	[ 3; 0; 3 ]
+                    Unlock      2010
+                    }
+                    {
+                    Name		"22nm"
+                    Description "Transistors are sized 22nm (0.022μm)"
+                    DevTime	    2
+                    Level		3
+                    CodeArt	    1
+                    Submarkets	[ 3; 0; 3 ]
+                    Unlock      2013
+                    }
+                    {
+                    Name		"14nm"
+                    Description "Transistors are sized 14nm (0.014μm)"
+                    DevTime	    2
+                    Level		3
+                    CodeArt	    1
+                    Submarkets	[ 3; 0; 3 ]
+                    Unlock      2014
+                    }
+                    {
+                    Name		"10nm"
+                    Description "Transistors are sized 10nm (0.01μm)"
+                    DevTime	    2
+                    Level		3
+                    CodeArt	    1
+                    Submarkets	[ 3; 0; 3 ]
+                    Unlock      2018
+                    }
+                    {
+                    Name		"7nm"
+                    Description "Transistors are sized 7nm (0.007μm)"
+                    DevTime	    2
+                    Level		3
+                    CodeArt	    1
+                    Submarkets	[ 3; 0; 3 ]
+                    Unlock      2019
+                    }
+                    {
+                    Name		"5nm"
+                    Description "Transistors are sized 5nm (0.005μm)"
+                    DevTime	    2
+                    Level		3
+                    CodeArt	    1
+                    Submarkets	[ 3; 0; 3 ]
+                    Unlock      2020
+                    }
+                    # NOTE: All transistor sizes AND Unlock dates are based on real-world times.
+				]
+			}
+			{
+			Name		Misc
+			Spec		Network
+			Optional	True
+			Description "Make more money from your users - at the risk of being caught!"
+			DevTime		1
+			CodeArt		1
+			Submarkets	[ 0; 1; 1 ]
+			Features
+				[
+					{
+					Name		"False-Advertising"
+					Description "Increase your sales by False-Advertising, at the risk of getting caught"
+					DevTime		3
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+					"
+					Product.Userbase = Product.Userbase * 1.1;
+					Product.DevCompany.MakeTransaction(-Product.Userbase/10, Legal, \"Owned\");
+					"
+					}
+					{
+					Name		"Paid Support"
+					Description "Force users to pay for support while decreasing satisfaction."
+					DevTime		4
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay 
+					"
+					Product.Userbase = Product.Userbase*0.95;
+					"
+					}
+					{
+					Name		"Microphone Surveillance"
+					Description "Fix bugs before users' report them at the risk of getting caught"
+					Server		0.0001
+					DevTime		5
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+"if (Product.GetVar(\"MicMining\", true))//Check if player has been caught
+	{
+	Product.Bugs = Max(0, Product.Bugs - Product.Userbase * 0.01);//Remove 1 bug from product for each 100th active user
+	if (Random() * Product.Userbase > 250000)//Random chance of getting caught
+		{
+		LaunchLawsuit(\"SpyingOnUsers\", Product.Sum, 0.7);//Create anonymous lawsuit
+		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);//Remove fans and market recognition from player in category
+		Product.Userbase = Product.Userbase * 0.05;//Remove 95% of active users
+		Product.KillAwareness();//Remove all marketing
+		Product.PutVar(\"MicMining\", false);//Mark player as caught for this product
+		AddPopup(Localize(\"SurveillanceNotification\", Product.Name), 1, \"Exclamation\", Issue);//Add notification in top left corner
+		}
+	}"
+					}
+					{
+					Name		"Datamining"
+					Description	"Sell your users' data to make an extra {Currency:0.25} per active user, at the risk of getting caught"
+					Server		0.0005
+					DevTime		4
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+"if (Product.GetVar(\"Datamining\", true))//Check if player has been caught
+	{
+	var extra = Product.Userbase * 0.25;//Calculate extra income
+	Product.DevCompany.MakeTransaction(extra, Sales, \"Datamining\");//Add money
+	Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
+	if (Random() * Product.Userbase > 250000)//Random chance of getting caught
+		{
+		LaunchLawsuit(\"Datamining\", Product.Sum, 1);//Create anonymous lawsuit
+		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);//Remove fans and market recognition from player in category
+		Product.Userbase = Product.Userbase * 0.05;//Remove 95% of active users
+		Product.KillAwareness();//Remove all marketing
+		Product.PutVar(\"Datamining\", false);//Mark player as caught for this product
+		AddPopup(Localize(\"SurveillanceNotification\", Product.Name), 1, \"Exclamation\", Issue);//Add notification in top left corner
+		}
+	}"
+					}
+				]
+			}
+		]
+	}

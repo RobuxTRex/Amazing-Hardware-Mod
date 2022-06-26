@@ -1,0 +1,46 @@
+-start(base)
+-base(base2,end,stop)
+a3
+a5
+a7
+a9
+a12
+b3
+b5
+b7
+b9
+b12
+Limtium
+-base2(end,stop)
+ 1000
+ 1000K
+ 2000
+ 2000K
+ 3000
+ 3000K
+ 4000
+ 4000K
+ 5000
+ 5000K
+ 6000
+ 6000K
+ 7000
+ 7000K
+ 8000
+ 8000K
+ 9000
+ 9000K
+ 10000
+ 10000K
+ 11000
+ 11100K
+ 12000
+ 12000K
+-end(stop)
+ Gold
+ Silver
+ Diamond
+ Platinum
+ Copper
+ Uranium
+ Emerald
